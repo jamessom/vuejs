@@ -12,6 +12,21 @@ var hello = new Vue({
       {name: "BackboneJS"},
       {name: "MeteorJS"},
       {name: "Zend Framework"},
-    ]
+    ],
+    newElement: '',
+    elements: []
+  },
+  methods:{
+    addElement: function (event) {
+      var title = this.newElement.trim();
+      if (title){
+        this.elements.push({title:title});
+        this.newElement = "";       
+      }
+    },
+    removeElement: function name(event, index) {
+      event.preventDefault();
+      this.elements.splice(index, 1);
+    }
   }
 });
