@@ -1,2 +1,2 @@
-# vuejs1
-Repo to test VueJS v1
+# vuejs
+Repo to test VueJS
